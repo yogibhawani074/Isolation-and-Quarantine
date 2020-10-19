@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>COVID-19 Calculator</title>
+  <link rel="stylesheet" href="css\styles.css" >
+  <link rel="icon" href="favicon.ico">
+
+
+</head>
+<body>
+<div class ="top-container">
+  <img class="img1" src="images/img1.png" width="200" height="200">
+    <h1>COVID-19 Calculator</h1>
+    <h2>Isolation and Quarantine</h2>
+    <h2>What type of timeline do you need?</h2>
+  <hr>
+</div>
+<div class = "middle container">
+  <button class="a">Isolation</button>
+<form>
+  <label>When did your signs and/or begin to develop? </label>
+  <input type = "date" id="A" />
+  <input type = "Submit" on click ="change()"/><br/>
+  <label>Isolate until at least:</label>
+  <input type = "text" id="B" placeholder="Date of Isolation" /><br/>
+  <p>( Case may end isolation if:
+  <p>Symptoms have improved and they have had no fever (without taking fever reducing medication) for three days. )</p>
+</form>
+<hr>
+<div class = "middle container">
+  <button class="b">Quarantine</button>
+<form>
+  <label>When was the contact’s last exposure to a positive case of COVID-19? </label>
+  <input type = "date" id="C" />
+  <input type = "Submit" on click ="change()"/><br/>
+  <label>Quarantine until at least:</label>
+  <input type = "text" id="D" placeholder="Date of Quarantine" /><br/>
+  <p>( Quarantine should not end until 14 days after close contact with a case. 
+  <p>If the contact experiences symptoms or signs during quarantine, they should get in touch with a medical professional.)</p>
+  <hr>
+</form>
+<script src="index.js" charset="utf-8"></script>
+
+  <footer>
+    Made with ❤️ in Nepal.
+  </footer>
